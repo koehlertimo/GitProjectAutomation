@@ -9,7 +9,7 @@ function create() {
     touch readme.md 
     git add .
     git commit -m "init commit"
-    python /home/timo/create.py $1
+    python /your/path/create.py $1 #change it to the path of the creaty.py file
     git remote add origin https://yourusername:githubpassword@github.com/yourusername/$1  #replace yourusername and githubpassword with your creidantials!
     git push --set-upstream origin master
     clear
