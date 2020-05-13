@@ -7,7 +7,7 @@ import time
 
 repo = str(sys.argv[1])
 
-browser = webdriver.Chrome("/home/timo/chromedriver")
+browser = webdriver.Chrome("/home/timo/chromedriver") #Change it to the path of the chromedriver
 browser.get('https://github.com/login')
 
 user = browser.find_element_by_xpath("//*[@id='login_field']")
