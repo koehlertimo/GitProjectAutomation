@@ -1,5 +1,8 @@
 #!/bin/bash
 
+ghusername = yourusername #put your github username in here
+ghpass = yourpassword #put your github password in here
+
 function create() {
     cd
     cd Documents/dev
@@ -9,8 +12,8 @@ function create() {
     touch readme.md 
     git add .
     git commit -m "init commit"
-    python /your/path/create.py $1 #change it to the path of the creaty.py file
-    git remote add origin https://yourusername:githubpassword@github.com/yourusername/$1  #replace yourusername and githubpassword with your creidantials!
+    python ./create.py $1 
+    git remote add origin https://$ghusername:$ghpass@github.com/$ghusername/$1  
     git push --set-upstream origin master
     clear
     code .
